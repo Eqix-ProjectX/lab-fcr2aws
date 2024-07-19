@@ -102,6 +102,9 @@ variable "aws_gateway_asn" {
   description = "The ASN to be configured on the Amazon side of the connection. The ASN must be in the private range of 64,512 to 65,534 or 4,200,000,000 to 4,294,967,294"
   type        = number
 }
+variable "project_id" {}
+variable "fcr_name" {}
+variable "account_number" {}
 # variable "connection_uuid" {
 #   description = "Equinix Connection UUID to Apply the Routing Protocols to"
 #   type        = string

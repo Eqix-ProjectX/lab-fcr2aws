@@ -21,3 +21,5 @@ variable "bgp_auth_key" {
 variable "connection_uuid" {}
 variable "fcr_name" {}
 variable "direct_equinix_ipv4_ip" {}
+variable "project_id" {}
+variable "account_number" {}

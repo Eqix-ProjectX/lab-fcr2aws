@@ -23,10 +23,10 @@ resource "equinix_fabric_cloud_router" "new_cloud_router"{
     code = "STANDARD"
   }
   project {
-      project_id = "3c764c94-0afa-41dd-90b9-29e98e0b8720"
+      project_id = var.project_id
   }
   account {
-      account_number = "594803"
+      account_number = var.account_number
   }
 }
 

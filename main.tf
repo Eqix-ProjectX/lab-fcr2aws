@@ -10,13 +10,15 @@ provider "aws" {
 
 module "fcr" {
   source                 = "./modules/fcrs/"
-  fcr_name               = "sna-lab-fcr1"
+  fcr_name               = var.fcr_name
   notifications_emails   = var.notifications_emails
   connection_uuid        = module.cloud_router_aws_connection.primary_connection_id
   customer_peer_ip       = substr(var.aws_vif_amazon_address, 0, 11)
   customer_asn           = var.aws_gateway_asn
   bgp_auth_key           = var.aws_vif_bgp_auth_key
   direct_equinix_ipv4_ip = var.aws_vif_customer_address
+  project_id             = var.project_id
+  account_number         = var.account_number
 }
 
 module "cloud_router_aws_connection" {
