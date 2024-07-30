@@ -1,6 +1,7 @@
 This is the experiment :construction_worker_man:
 
 **terraform.tfvars (sample)**
+```terraform
 notifications_type          = "ALL"
 notifications_emails        = ["email@equinix.com"]
 purchase_order_number       = "PO"
@@ -25,3 +26,4 @@ aws_vif_bgp_auth_key     = "secret"
 project_id               = "project_id"
 fcr_name                 = "fcr_name"
 account_number           = "account_number"
+```
